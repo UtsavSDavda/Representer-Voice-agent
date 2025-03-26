@@ -6,13 +6,14 @@ import requests
 from deepgram import Deepgram,Transcription
 import openai
 import io
+import streamlit as st
 from prompts import FILE_SELECTION_PROMPT,ANSWER_PROMPT
 
-DEEPGRAM_API_KEY = os.getenv('DEEPGRAM_API_KEY')
+DEEPGRAM_API_KEY = st.secrets['DEEPGRAM_API_KEY']
 if not DEEPGRAM_API_KEY:
     raise ValueError("DeepGram API KEY is NOT PROVIDED!")
 
-openai.api_key = os.getenv('OPENAI_API_KEY')
+openai.api_key = st.secrets['OPENAI_API_KEY']
 
 def select_document(query: str) -> str:
         response = openai.chat.completions.create(model="gpt-4o-mini",  
