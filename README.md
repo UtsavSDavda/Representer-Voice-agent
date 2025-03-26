@@ -23,7 +23,7 @@ Step 3: You will have 3 files: experience.txt, personality.txt and skills.txt. P
 
 Step 4: Run the app. Open 2 terminals. Enter the following command in the first terminal:
 
-uvicorn main:app --reload
+uvicorn localmain:app --reload
 
 Enter the following command in the 2nd terminal: 
 
