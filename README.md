@@ -31,6 +31,11 @@ streamlit run app.py
 
 Step 5: Use your app! Open any browser. Enter the following URL:  localhost:8501.
 
+NOTE: Use the following username and password:
+
+Username: user@example.com
+Password: password
+
 You will see a screen of streamlit UI. Press start recording to ask your question. Press stop recording once you are done. You will recieve an audio response. Play it to hear the response.
 
 ![image](https://github.com/user-attachments/assets/438ddcba-4c92-4bb8-a07d-06c72e9a17ab)
